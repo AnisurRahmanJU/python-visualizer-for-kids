@@ -14,7 +14,7 @@ print("উচ্চতা:", height)
 print("পাস:", passed)`,
 
   list: `# লিস্ট (অ্যারে) 
-fruits = ["আম", "কলা", "লিচু", "জাম", "পেয়ারা"]
+fruits = ["আম 🥭", "কলা 🍌", "লিচু 🍒", "জাম 🍇", "পেয়ারা 🍐"]
 marks = [90, 85, 92, 78, 95]
 
 #  Tupple, Dictionary, Object not supported
