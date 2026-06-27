@@ -229,7 +229,7 @@ function stepNext() { if (stepIdx < TRACE.length - 1) { stepIdx++; updateStepBar
 function run() {
   const code = document.getElementById('code').value;
   const rbtn = document.getElementById('rbtn');
-  rbtn.textContent = '▶&nbsp; চালাও';
+  rbtn.textContent = '▶   চালাও';
   setSt('run', 'চলছে...');
   document.getElementById('vb').innerHTML = `<div class="vempty"><div class="wave"><div class="wd"></div><div class="wd"></div><div class="wd"></div></div><div class="vet" style="color:var(--muted)">বিশ্লেষণ হচ্ছে...</div></div>`;
 
