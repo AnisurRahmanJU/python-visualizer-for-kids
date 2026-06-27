@@ -1,7 +1,7 @@
 // ── SAMPLES ──
 const S = {
   vars: `# বিভিন্ন ধরনের ভেরিয়েবল
-name = "রাহেলা"
+name = "আনিছ"
 age = 10
 height = 4.5
 passed = True
