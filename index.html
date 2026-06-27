@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python ভিজুয়ালাইজার</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo"><div class="logo-icon">🐍</div><a style="text-decoration:none; color: inherit;" href="index.html">Python ভিজুয়ালাইজার</div></a>
+  <div class="spacer"></div>
+  <div class="status-pill"><div class="dot" id="dot"></div><span id="stxt">প্রস্তুত</span></div>
+  <button class="run-btn" id="rbtn" onclick="run()">▶&nbsp; চালাও</button>
+  <a style="text-decoration:none; color: inherit;" href="index.html"><button class="run-btn" id="rbtn" >কোডে যাও</button></a>
+</div>
+
+<div class="main">
+  <!-- EDITOR -->
+  <div class="epane">
+    <div class="phead">
+      📝&nbsp;<b>main.py</b>
+      <span class="hint">Ctrl+Enter = চালাও</span>
+    </div>
+    <div class="samples">
+      <button class="sbtn" onclick="ls('vars')">📦 ভেরিয়েবল</button>
+      <button class="sbtn" onclick="ls('list')">🗂️ লিস্ট</button>
+      <button class="sbtn" onclick="ls('func')">🔧 ফাংশন</button>
+      <button class="sbtn" onclick="ls('for')">🔁 for লুপ</button>
+      <button class="sbtn" onclick="ls('while')">⏱ while</button>
+      <button class="sbtn" onclick="ls('if')">🔀 if/else</button>
+    </div>
+    <div class="eedge">
+      <div class="line-hl" id="linehl"></div>
+      <div class="lnums" id="lnums">1</div>
+      <div class="hlayer" id="hl"></div>
+      <textarea id="code" spellcheck="false" autocomplete="off"
+        oninput="edit()" onkeydown="kd(event)" onscroll="ss()"></textarea>
+    </div>
+    <div class="stepbar" id="stepbar">
+      <button class="stepbtn" id="prevBtn" onclick="stepPrev()">◀ আগে</button>
+      <span class="stepinfo" id="stepinfo">ধাপ: -/-</span>
+      <span class="stepdesc" id="stepdesc"></span>
+      <button class="stepbtn" id="nextBtn" onclick="stepNext()">পরে ▶</button>
+    </div>
+    <div class="ostrip">
+      <div class="ohead">⚡ আউটপুট</div>
+      <div class="obody" id="ob"><span class="oempty">▶ চালাও বোতাম চাপলে আউটপুট আসবে...</span></div>
+    </div>
+  </div>
+
+  <!-- VISUALIZER -->
+  <div class="vpane">
+    <div class="phead">🔭&nbsp;<b>ভিজুয়ালাইজার</b></div>
+    <div class="vbody" id="vb">
+      <div class="vempty">
+        <div class="vei">🔭</div>
+        <div class="vet">কোড লেখো এবং <strong>▶ চালাও</strong> চাপো<br>কোড কীভাবে কাজ করে দেখাবে!</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
